@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .gule {
+            padding-left: 200px;
+            padding-top: 15px;
+            color: coral;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        span {
+            color: black;
+        }
+
+        .navbar {
+            padding-left: 900px;
+            font-size: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .about, .contact, .WORK {
+            padding-left: 30px;
+        }
+
+        .cv {
+            margin-top: 20px;
+            margin-left: 20px;
+            border-color: rgb(216, 150, 150);
+            height: 40px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .cv:hover {
+            background-color: aliceblue;
+        }
+
+        .container {
+            display: flex;
+            align-items: normal;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            flex: 1;
+            padding-top: 0px;
+            padding-left: 280px;
+            margin-top: 150px;
+            padding-right: 0px;
+        }
+
+        .detail {
+            color: rgb(162, 170, 177);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .image {
+            flex: 1;
+            margin-top: 100px;
+            border-radius: 200px;
+            padding-left: 1px;
+            padding-right: 200px;
+            border: 0px solid;
+            background-color: white;
+            color: rgb(202, 84, 84);
+        }
+
+        .git {
+            padding-left: 90px;
+            padding-top: 70px;
+        }
+
+        .button1 {
+            margin-top: 30px;
+            margin-left: 120px;
+            height: 35px;
+            width: 90px;
+            border: none;
+            background-color: red;
+        }
+
+        .button1:hover {
+            background-color: crimson;
+            cursor: pointer;
+        }
+
+        .col {
+            color: red;
+        }
+
+        .contacth:hover {
+            cursor: pointer;
+            background-color: darkseagreen;
+        }
+
+        .det:hover {
+            background-color: darkseagreen;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1200px) {
+            .gule, .navbar {
+                padding-left: 10px;
+            }
+
+            .navbar {
+                padding-left: 200px;
+            }
+
+            .cv {
+                margin-left: 0;
+            }
+
+            .text {
+                padding-left: 50px;
+                margin-top: 50px;
+            }
+
+            .image {
+                padding-right: 0;
+            }
+
+            .git {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text {
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+
+            .image {
+                margin-top: 20px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .gule, .navbar {
+                padding-left: 0;
+                padding-right: 0;
+                text-align:center;
+            }
+
+            .navbar {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .cv {
+                margin-left: 0;
+                margin-top: 1px;
+            }
+
+            .button1 {
+                margin-left: 0;
+            }
+
+            .git {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            #cont, #work {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gule {
+                font-size: 1em;
+            }
+
+            .navbar {
+                font-size: 0.7em;
+            }
+
+            .cv {
+                height: 35px;
+            }
+
+            .button1 {
+                height: 30px;
+                width: 80px;
+            }
+
+            .contacth, .det {
+                width: 100px;
+                height: 35px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body class="body">
+    <table style="display: flex; width: 100%;">
+        <tr>
+            <td>
+                <h1 class="gule"><span>G</span>u<span>l</span>u<span>m</span>a</h1>
+            </td>
+            <td>
+                <nav style="display: flex;" class="navbar">
+                    <a href="#home" class="Home">HOME</a>
+                    <a href="#about" class="about">ABOUT</a>
+                    <a href="#work" CLASS="WORK">WORKSTACK</a>
+                    <a href="#cont" class="contact">CONTACT</a>
+                    
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <div class="container">
+        <div class="text">
+            <h3 style="color: rgb(245, 125, 12);"><span>Hi</span> I'm</h3>
+            <h1>Guluma <span class="col">Meko</span>nn<span class="col">e</span>n</h1>
+            <h4>Adobe Graphics <span class="col">Designer</span> & Django <span class="col">web</span> developer</h4>
+            <p style="width: 500px;" class="detail"> 
+                I am an Adobe graphics designer and Django web developer with a passion for creating visually engaging and technically robust digital solutions. I specialize in crafting beautiful designs using Adobe Creative Suite and developing scalable web applications with Django. My combined expertise in design and development ensures that my projects are both aesthetically pleasing and highly functional.
+            </p>
+            <button class="button1">Hire Me</button>
+            <a><button class="cv">Download cv</button></a>
+            <br>
+            <div class="git">
+                <img src="github.jpg" style="height: 30px;width: 30px;">
+                <img src="linkedin.jpg" style="height: 31px;width: 30px;">
+                <img src="facebook.jpg" style="height: 30px; width: 30px;">
+            </div>
+        </div>
+        <div class="image">
+            <img src="porti.jpg" style="height: 500px;width: 600px; border-radius: 100px;">
+        </div>
+    </div>
+    <div style="width: 100%; height: 150px; background-color: rgb(212, 158, 87); margin-top: 29.2px; padding-left: 0;"></div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <div id="cont" style="border: 3px solid rgb(93, 190, 93); width: 300px;height: 400px;flex: 0.4;margin: 10px;">
+            <h2 style="text-align: center; color: rgb(76, 124, 28);">Contact Him</h2>
+            <p style="text-align: center;">Name:<br><input placeholder="full name..." style="height: 30px;"></p>
+            <p style="text-align: center;">Email:<br><input placeholder="email..." style="height: 30px;"></p>
+            <p style="text-align: center;">Address:<br><input placeholder="current address..." style="height: 30px;"></p>
+            <button class="contacth" style="display: block; margin: 20px auto; width: 120px;height: 40px;background-color: rgb(126, 197, 72);border: none;color: whitesmoke; border-radius: 50px;">Contact Him</button>
+        </div>
+        <div id="work" style="border: 3px solid rgb(93, 190, 93); height: 400px; margin: 10px;flex: 0.4;">
+            <h2 style="text-align: center;">My works </h2>
+            <p style="text-align:left;padding-left: 10px;font-size: small;"># Designing of some UI using Adobe working Suite</p>
+            <p style="text-align:start;padding-left: 10px;font-size: small;"># Designing of attractive form on Django Designing Format</p>
+            <p style="text-align:left;padding-left: 10px;font-size: small;"># Work on simple Django projects</p>
+            <p style="text-align: left;padding-left: 10px;font-size: small;"># Designing of posters,flyer, editing videos using Adobe suite</p>
+            <button class="det" style="display: block; margin: 20px auto; width: 120px;height: 40px;background-color: rgb(126, 197, 72);border: none;color: whitesmoke; border-radius: 50px;">More Details</button>
+        </div>
+    </div>
+</body>
+</html>
